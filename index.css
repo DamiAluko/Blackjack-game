@@ -18,11 +18,19 @@ body {
   font-style: italic;
 }
 #start-btn{
-  width: 400;
-  height: 200;
   padding: 10px;
   border: none;
   border-radius: 2px;
+  margin: 5px;
+  background-color: goldenrod;
+  color: #016f32;
+  font-weight: 800;
+}
+#new-card-btn{
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  margin: 5px;
   background-color: goldenrod;
   color: #016f32;
   font-weight: 800;
