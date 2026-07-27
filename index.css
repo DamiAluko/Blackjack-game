@@ -22,6 +22,7 @@ body {
   height: 200;
   padding: 10px;
   border: none;
+  border-radius: 2px;
   background-color: goldenrod;
   color: #016f32;
   font-weight: 800;
