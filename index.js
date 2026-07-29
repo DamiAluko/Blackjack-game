@@ -9,7 +9,7 @@ const playerEl = document.getElementById('player-el')
 // startButton.addEventListener('click', startGame)
 // newCardButton.addEventListener('click', newCard)
 let player = {
-  name: "Dami",
+  name: "Player",
   chips: 0,
 }
 
