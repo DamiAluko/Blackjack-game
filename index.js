@@ -10,7 +10,7 @@ const playerEl = document.getElementById('player-el')
 // newCardButton.addEventListener('click', newCard)
 let player = {
   name: "Dami",
-  chips: 20
+  chips: 0,
 }
 
 let messageEl = document.getElementById('message-el')
@@ -45,7 +45,7 @@ function renderGame(){
   
 } else if (sum === 21){
   message = "You've got Blackjack!"
-  player.chips += 10;
+  player.chips += 20;
   hasBlackJack = true;
   isAlive = false 
 } else {
@@ -60,6 +60,9 @@ function renderGame(){
     cardsEl.textContent +=  allCards[i] + " "
   }
   // cardsEl.textContent = "Cards: " + allCards[0] + " " + allCards[1];
+
+  playerEl.textContent = player.name + ": $" + player.chips
+
   console.log(isAlive);
   console.log(allCards);
 }
@@ -73,11 +76,9 @@ function newCard(){
     sum += newCardGenerated;
     renderGame()
   }
-  
 }
 
 function startGame(){
-  playerEl.textContent = player.name + ": $" + player.chips
   renderGame()
 }
 
